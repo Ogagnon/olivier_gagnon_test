@@ -36,7 +36,7 @@ def hasOverlap(s):
     if Xs[0] > Xs[1] or Xs[2] > Xs[3]:
         return "Invalid numbers"
     
-    return Xs[1] > Xs[2]
+    return Xs[1] > Xs[2] and Xs[3] > Xs[0]
 
         
 #Tests
@@ -44,3 +44,4 @@ print(hasOverlap("(-90,-60)\n(-60,7)")) #false
 print(hasOverlap("(-90,-60)\n(-65,7)")) #true
 print(hasOverlap("(1,76)\n(500,7)")) #false
 print(hasOverlap("(1,76.75)\n(76.21,100)")) #true
+print(hasOverlap("(0,10)\n(10,15)")) #true
